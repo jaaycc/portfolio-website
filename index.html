@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Jay Chris G. Santiago - Portfolio Website">
+  <meta name="keywords" content="web developer, portfolio, javascript">
+  <meta property="og:title" content="Jay Chris G. Santiago - Portfolio">
+  <meta property="og:description" content="A beginner portoflio website project">
+  <meta property="og:image" content="assets/images/avatar.png">
+  <title>Portfolio — Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="animated-bg" id="animated-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- <div class="nav-logo">
+        <a href="#">Jay Chris G. Santiago</a>
+      </div> -->
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home-section" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Theme Toggle -->
+      <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
+      
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container" id="home">
+    <header class="hero" id="home-section" data-animate>
+      <div class="intro">
+        <p class="eyebrow">Hi, I'm a</p>
+        <h1>
+          <span id="typewriter-text"></span>
+          <span class="typewriter-cursor">|</span>
+        </h1>
+        <p class="lead">I build responsive and modern web applications. Clean design, performance, and accessibility are my focus.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">View Work</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="socials">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+      <div class="photo">
+        <img class="avatar floating" src="assets/images/avatar.png" alt="">
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="card about" id="about" data-animate>
+          <h2 class="section-title">About Me</h2>
+          <p>I'm a passionate web developer with experience in creating robust and scalable web applications. I enjoy building user-friendly interfaces and well-structured frontends.</p>
+          <div>
+            <h3>Key skills</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Database Management</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Problem Solver</span>
+              <span class="tag">Collaboration</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Power BI</span>
+              
+            </div>
+          </div>
+        </section>
+
+        <aside class="card skills" data-animate>
+          <h3>Skills Matrix</h3>
+          <div class="skills-matrix">
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <div class="skill-name">HTML5</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <div class="skill-name">CSS3</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fab fa-js"></i></div>
+              <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="skill-name">SQL</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+              <div class="skill-name">Git</div>
+            </div>
+          </div>
+
+          <div class="skills-chart">
+            <h3 style="margin-top: 30px; margin-bottom: 20px;">Skill Levels</h3>
+            <div class="chart-container">
+              <div class="chart-bar">
+                <div class="chart-label">HTML/CSS</div>
+                <div class="chart-progress">
+                  <div class="chart-fill" data-width="90"></div>
+                </div>
+                <div class="chart-value">90%</div>
+              </div>
+              <div class="chart-bar">
+                <div class="chart-label">JavaScript</div>
+                <div class="chart-progress">
+                  <div class="chart-fill" data-width="85"></div>
+                </div>
+                <div class="chart-value">85%</div>
+              </div>
+              <div class="chart-bar">
+                <div class="chart-label">Python</div>
+                <div class="chart-progress">
+                  <div class="chart-fill" data-width="85"></div>
+                </div>
+                <div class="chart-value">85%</div>
+              </div>
+              <div class="chart-bar">
+                <div class="chart-label">SQL</div>
+                <div class="chart-progress">
+                  <div class="chart-fill" data-width="90"></div>
+                </div>
+                <div class="chart-value">90%</div>
+              </div>
+              <div class="chart-bar">
+                <div class="chart-label">Git</div>
+                <div class="chart-progress">
+                  <div class="chart-fill" data-width="70"></div>
+                </div>
+                <div class="chart-value">70%</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section id="projects" class="card projects-wrap" data-animate>
+        <div class="projects-head">
+          <h2>Projects</h2>
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="html/css">HTML/CSS</button>
+            <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+          </div>
+        </div>
+
+        <div class="projects-slider">
+          <button class="slide-btn prev"><i class="fas fa-chevron-left"></i></button>
+          
+          <div class="projects-grid">
+
+            <article class="proj-card" data-type="all html/css javascript" data-project="1">
+              <div class="proj-thumb">Project</div>
+              <div class="proj-content">
+                <div class="proj-title">Project Name</div>
+                <div class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, tempora sapiente maxime praesentium totam! Deleniti, fugit dolorem. Numquam iste, neque dolorem accusamus expedita ullam cumque ex explicabo enim quasi.</div>
+                <div class="proj-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="proj-actions">
+                  <a class="btn btn-primary" href="#">Live Demo</a>
+                  <a class="chip" href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-type="all html/css" data-project="1">
+              <div class="proj-thumb">Project</div>
+              <div class="proj-content">
+                <div class="proj-title">Project Name</div>
+                <div class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, tempora sapiente maxime praesentium totam! Deleniti, fugit dolorem. Numquam iste, neque dolorem accusamus expedita ullam cumque ex explicabo enim quasi.</div>
+                <div class="proj-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+                <div class="proj-actions">
+                  <a class="btn btn-primary" href="#">Live Demo</a>
+                  <a class="chip" href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-type="all python" data-project="1">
+              <div class="proj-thumb">Project</div>
+              <div class="proj-content">
+                <div class="proj-title">Project Name</div>
+                <div class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, tempora sapiente maxime praesentium totam! Deleniti, fugit dolorem. Numquam iste, neque dolorem accusamus expedita ullam cumque ex explicabo enim quasi.</div>
+                <div class="proj-tech">
+                  <span class="tech-tag">Python</span>
+                </div>
+                <div class="proj-actions">
+                  <a class="btn btn-primary" href="#">Live Demo</a>
+                  <a class="chip" href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-type="all html/css javascript python" data-project="1">
+              <div class="proj-thumb">Project</div>
+              <div class="proj-content">
+                <div class="proj-title">Project Name</div>
+                <div class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, tempora sapiente maxime praesentium totam! Deleniti, fugit dolorem. Numquam iste, neque dolorem accusamus expedita ullam cumque ex explicabo enim quasi.</div>
+                <div class="proj-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Python</span>
+                </div>
+                <div class="proj-actions">
+                  <a class="btn btn-primary" href="#">Live Demo</a>
+                  <a class="chip" href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-type="all html/css" data-project="1">
+              <div class="proj-thumb">Project</div>
+              <div class="proj-content">
+                <div class="proj-title">Project Name</div>
+                <div class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, tempora sapiente maxime praesentium totam! Deleniti, fugit dolorem. Numquam iste, neque dolorem accusamus expedita ullam cumque ex explicabo enim quasi.</div>
+                <div class="proj-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+                <div class="proj-actions">
+                  <a class="btn btn-primary" href="#">Live Demo</a>
+                  <a class="chip" href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-type="all python" data-project="1">
+              <div class="proj-thumb">Project</div>
+              <div class="proj-content">
+                <div class="proj-title">Project Name</div>
+                <div class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, tempora sapiente maxime praesentium totam! Deleniti, fugit dolorem. Numquam iste, neque dolorem accusamus expedita ullam cumque ex explicabo enim quasi.</div>
+                <div class="proj-tech">
+                  <span class="tech-tag">Python</span>
+                </div>
+                <div class="proj-actions">
+                  <a class="btn btn-primary" href="#">Live Demo</a>
+                  <a class="chip" href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <button class="slide-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <!-- Project Modal -->
+      <div class="modal" id="project-modal">
+        <div class="modal-content">
+          <button class="modal-close" id="modal-close">&times;</button>
+          <div class="modal-header">
+            <h2 id="modal-title">Project Title</h2>
+          </div>
+          <div class="modal-body">
+            <div class="modal-image" id="modal-image">Project Image</div>
+            <p id="modal-description">Project description will appear here.</p>
+            <div class="modal-tech" id="modal-tech">
+              <!-- Technology tags will be inserted here -->
+            </div>
+            <div class="proj-actions">
+              <a class="btn btn-primary" href="#" id="modal-demo">Live Demo</a>
+              <a class="chip" href="#" id="modal-github">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Experience Section -->
+      <section id="experience" class="experience-section" data-animate>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline-tree">
+          <div class="tree-line"></div>
+
+          <div class="tree-node">
+            <div class="node-dot"></div>
+            <div class="node-content">
+              <div class="node-date">2017–2018</div>
+              <h3>Data Encoder</h3>
+              <h4>LGU Magallanes</h4>
+              <p>Built and maintained websites for small businesses, implemented responsive designs, and learned modern development practices.</p>
+              <div class="node-skills">
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">WordPress</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree-node">
+            <div class="node-dot"></div>
+            <div class="node-content">
+              <div class="node-date">2016–2017</div>
+              <h3>Data Encoder</h3>
+              <h4>IGL Medical and Dental Supplies Trading</h4>
+              <p>Maintained accurate sales and inventory records while generating reports to support data-driven business decisions.</p>
+              <div class="node-skills">
+                <span class="skill-tag">Learning</span>
+                <span class="skill-tag">Collaboration</span>
+                <span class="skill-tag">Foundation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact" class="card contact-section" data-animate>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Email</h4>
+                  <p>santiagojaychris@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Phone</h4>
+                  <p>+63 9278358048</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Location</h4>
+                  <p>Sorsogon, Philippines</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="socials contact-socials">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary form-submit">
+                <span class="submit-text">Send Message</span>
+                <span class="loading-spinner" style="display: none;">
+                  <i class="fas fa-spinner fa-spin"></i>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>© <span id="year"></span> Jay Chris G. Santiago — Built with HTML, CSS & JavaScript</footer>
+    </main>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
